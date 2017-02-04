@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#567665"
+    android:screenOrientation="portrait"
+    tools:context="com.example.arminmehran.weatherapplication.MenuFragment"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"/>
+
+    <ToggleButton
+        android:id="@+id/unitsButton"
+        android:layout_below="@id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOn="Imperial"
+        android:textOff="Metrics"/>
+
+    <ToggleButton
+        android:id="@+id/geoButton"
+        android:layout_below="@id/unitsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="Geo On"
+        android:textOff="Geo Off"
+        />
+    <LinearLayout
+        android:id="@+id/cityNameBox"
+        android:layout_below="@id/geoButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusableInTouchMode="true">
+        <EditText
+            android:id="@+id/cityNameText"
+            android:background="#ffffff"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/citySelectButton"
+            android:layout_weight="7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GO" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

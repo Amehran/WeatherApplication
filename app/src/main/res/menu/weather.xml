@@ -1,0 +1,15 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.arminmehran.WeatherActivity"
+    android:id="@+id/menu">
+
+    <item android:id="@+id/fragment"
+        android:title="action_settings"
+        android:icon="@drawable/menu_dots"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+
+</menu>

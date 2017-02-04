@@ -18,16 +18,20 @@ import java.util.concurrent.ExecutionException;
 
 
 /**
- * An {@link IntentService} subclass for handling asynchronous task requests in
- * a service on a separate handler thread.
- * <p/>
- * TODO: Customize class - update intent actions and extra parameters.
+ * UpdateIntentService.java
+ *
+ * Created by Armin Mehran on 2015-03-28.
+ * Copyright (c) 2015 cs2680. All rights reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains the property of Armin Mehran
+ * and Frank Pagliuso.The intellectual and technical concepts contained herein are proprietary
+ * to Armin Mehran and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material is strictly forbidden
+ * unless prior written permission is obtained from Armin Mehran and Frank Pagliuso."
+ *
  */
-public class UpdateIntentService extends IntentService {
-    // TODO: Rename actions, choose action names that describe tasks that this
-    // IntentService can perform, e.g. ACTION_FETCH_NEW_ITEMS
 
-    // TODO: Rename parameters
+public class UpdateIntentService extends IntentService {
 
     JSONObject currentJson, hourlyJson, dailyJson;
     City cityModel = new City(null);
